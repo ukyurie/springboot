@@ -1,0 +1,21 @@
+server:
+  port: 8080
+# DataSource Config
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=accident;;encrypt=true;trustServerCertificate=true
+    username: uk
+    password: mjj123321
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+
+mybatis-plus:
+  configuration:
+    # MyBatis 配置
+    map-underscore-to-camel-case: true
+  global-config:
+    # 全局配置
+    db-config:
+      # 数据库配置
+      id-type: auto
+
+
